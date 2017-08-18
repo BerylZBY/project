@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式网站！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!--通用css样式-->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--手机端css样式-->
+    <link rel="stylesheet" href="css/mob.css" media="screen and (max-width:500px)">
+
+    <!--pc端css样式-->
+    <link rel="stylesheet" href="css/pc.css" media="screen and (min-width:500px)">
+</head>
+<body>
+    <!--
+    响应式设计在项目中的套路总结
+    1. 适配式隐藏
+    2. 组件改写（有一定难度）
+    3. 栅格布局
+    -->
+
+    <!--头部-->
+    <header class="container">
+        <!--logo组件-->
+        <div class="logo-area">
+            <p><img class="logo-area-img" src="res/imgs/logo.png" /></p>
+            <p class="logo-area-title mob_hide">钟玲艺术体操国际俱乐部</p>
+            <p class="mob_hide"><small>Zhong Ling RG International Club</small></p>
+        </div>
+
+        <!--工具条组件-->
+        <div class="tool-area mob_hide">
+            <!--左侧-->
+            <div class="tool-area-left">
+                <span class="tool-area-ico-time"></span>
+                <span>预约</span>
+                <span class="tool-area-segment"></span>
+                <span>中文</span>
+            </div>
+            <!--右侧-->
+            <div class="tool-area-right">
+                <span class="tool-area-ico-erweima"></span>
+                <span>关注</span>
+            </div>
+            <!--中间-->
+            <div class="tool-area-center">
+                <span>EVERY ONE IS THE ONLY ONE</span>
+            </div>
+        </div>
+    </header>
+
+    <!--导航-->
+    <nav class="container">
+        <a class="toggle-btn">三</a>
+        <div class="nav-widget">
+            <a class="nav-widget-anchor">首页</a>
+            <a class="nav-widget-anchor">钟玲杯</a>
+            <a class="nav-widget-anchor">精品课程</a>
+            <a class="nav-widget-anchor">新闻资讯</a>
+            <a class="nav-widget-anchor">精彩瞬间</a>
+            <a class="nav-widget-anchor">免费试听</a>
+        </div>
+    </nav>
+
+    <!--banner-->
+    <section id="Banner" class="container">
+        <div class="banner-widget"></div>
+    </section>
+
+    <!--钟玲杯-->
+    <section id="Race" class="mob_hide container">
+        <div class="title-widget">
+            <h3>钟玲杯</h3>
+            <p><small class="title-widget-en-title">Zhong Ling Cup</small></p>
+        </div>
+        
+        <ul class="race-widget">
+            <li>
+                <a>
+                    <div>
+                        <span>钟玲杯宣传片</span>
+                        <br/>
+                        <small>2017第六届钟玲杯宣传片</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div>
+                        <span>赛事信息</span>
+                        <br/>
+                        <small>世界艺体交流的舞台</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div>
+                        <span>赛事合作</span>
+                        <br/>
+                        <small>你我共赢的机会</small>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <span>报名方式</span>
+                        <br/>
+                        <small>让我们一起见证</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!--精品课程-->
+    <section id="Class" class="container">
+        <div class="title-widget">
+            <h3>精品课程</h3>
+            <p><small class="title-widget-en-title">Excellent Course</small></p>
+        </div>
+
+        <div class="class-widget">
+            <a>
+                <p><img src="res/imgs/cover.jpg"/></p>
+                <p>免费公开课</p>
+            </a>
+            <a>
+                <p><img src="res/imgs/cover(1).jpg"/></p>
+                <p>嗨宝贝课程</p>
+            </a>
+            <a>
+                <p><img src="res/imgs/cover(2).jpg"/></p>
+                <p>常规及FIG</p>
+            </a>
+            <a>
+                <p><img src="res/imgs/cover(3).jpg"/></p>
+                <p>大师训练营</p>
+            </a>
+            <a>
+                <p><img src="res/imgs/cover(4).jpg"/></p>
+                <p>游学课程</p>
+            </a>
+        </div>
+    </section>
+
+    <!--师资团队-->
+    <section id="Team">
+        <div class="title-widget">
+            <h3>师资团队</h3>
+            <p><small class="title-widget-en-title">Teaching Staff</small></p>
+        </div>
+
+        <ul class="team-widget container col4 col2-mob">
+            <li>
+                <p><img src="res/imgs/f14.jpg" /></p>
+                <p>
+                    <span>Zhong Ling</span>
+                    <br/>
+                    <small>钟玲</small>
+                </p>
+            </li>
+            <li>
+                <p><img src="res/imgs/f11.jpg" /></p>
+                <p>
+                    <span>Anastasia Mishenina</span>
+                    <br/>
+                    <small>安娜斯塔西娅·米舍尼娜</small>
+                </p>
+            </li>
+            <li>
+                <p><img src="res/imgs/f12.jpg" /></p>
+                <p>
+                    <span>Tatiana Lykhopiy</span>
+                    <br/>
+                    <small>塔堤安娜·勒火培</small>
+                </p>
+            </li>
+            <li>
+                <p><img src="res/imgs/f13.jpg" /></p>
+                <p>
+                    <span>Eremina Margarita</span>
+                    <br/>
+                    <small>页丽明娜·玛格丽特</small>
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <!--精彩瞬间-->
+    <section id="Wonderful">
+        <div class="title-widget">
+            <h3>精彩瞬间</h3>
+            <p>
+                <small class="title-widget-en-title">Wonderful Moments</small>
+            </p>
+        </div>
+    </section>
+
+    <!--创始人简介-->
+    <section id="Founder"></section>
+
+    <!--页脚-->
+    <footer></footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
